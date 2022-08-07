@@ -7,6 +7,9 @@
   "types": "lib/index.d.ts",
   "license": "MIT",
   "repository": "https://github.com/hoepfnerdennis/ts-utils.git",
+  "files": [
+    "lib/*"
+  ],
   "scripts": {
     "build": "tsc"
   },
