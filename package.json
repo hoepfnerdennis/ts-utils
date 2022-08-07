@@ -1,12 +1,16 @@
 {
   "name": "@dnshpf/ts-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "dnshpf",
   "description": "typescript utility types",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
   "repository": "https://github.com/hoepfnerdennis/ts-utils.git",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "files": [
     "lib/*"
   ],
