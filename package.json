@@ -7,6 +7,7 @@
   "types": "lib/index.d.ts",
   "license": "MIT",
   "repository": "https://github.com/hoepfnerdennis/ts-utils.git",
+  "homepage": "https://hoepfnerdennis.github.io/ts-utils",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
