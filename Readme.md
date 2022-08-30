@@ -6,18 +6,39 @@ A collection of typescript utility types. Includes all type of stuff for mostly 
 
 ## What's inside?
 
-### `WithAsProp`
+### PolymorphicComponents
 
 To handle polymorphic as-prop in react components
 
-```tsx
-import { WithAsProp } from "@dnshpf/ts-utils";
+First create your polymorphic component
 
-function Box<As extends React.ElementType = "div">({
-  as: As,
-  ...props
-}: WithAsProp<As>) {
+```tsx
+import type { PolymorphicComponent } from "@dnshpf/ts-utils";
+
+const Box: PolymorphicComponent<"div"> = ({ as: As, ...props }) => {
   const Component = As || "div";
   return <Component {...props} />;
-}
+};
+```
+
+Then use it with the element you need
+
+```tsx
+const Container = () => {
+  return <Box as="span">Hello there!</Box>;
+};
+```
+
+or another component
+
+```tsx
+import Link from "my-components";
+
+const Container = () => {
+  return (
+    <Box as={Link} href="/path">
+      Hello there!
+    </Box>
+  );
+};
 ```

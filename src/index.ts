@@ -1,1 +1,1 @@
-export * from "./withAsProp";
+export * from "./PolymorphicComponent";
