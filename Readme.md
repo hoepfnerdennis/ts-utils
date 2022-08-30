@@ -4,6 +4,8 @@
 
 A collection of typescript utility types. Includes all type of stuff for mostly plain ts or react code.
 
+[Documentation](https://hoepfnerdennis.github.io/ts-utils/)
+
 ## What's inside?
 
 ### PolymorphicComponents
