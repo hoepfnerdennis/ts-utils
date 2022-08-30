@@ -11,6 +11,13 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
+  "keywords": [
+    "typescript",
+    "utility",
+    "react",
+    "components",
+    "polymorphic"
+  ],
   "files": [
     "lib/*"
   ],
